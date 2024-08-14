@@ -9,5 +9,16 @@ class User(db.Model):
     email = db.Column(db.String, unique=True)
     password = db.Column(db.String, nullable=False)
     username = db.Column(db.String, nullable=False)
-    accessToken = db.Column(db.String(255), unique=True, nullable=False)
-    urole = db.Column(db.String, nullable=False)
+    accessToken = db.Column(db.String(255))
+
+class CompanyDetails(db.Model):
+    __tablename__ = "Companydetails"
+    id = db.Column(db.Integer, primary_key=True)
+    entity = db.Column(db.String, nullable=False)
+    sector = db.Column(db.String, nullable=False)
+    email = db.Column(db.String, unique=True)
+    incorporation = db.Column(db.String, nullable=False)
+    address = db.Column(db.String)
+    revenue = db.Column(db.float, nullable=False)
+    website = db.Column(db.String)
+    is_verified = db.Column(db.Integer, nullable=False)
