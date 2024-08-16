@@ -1,13 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Login from './components/login';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 
 import { HashRouter, BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './components/home';
+import Signup from './components/signup';
 
 
 function App() {
@@ -17,9 +13,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="login" element={<Login />}></Route>
-          <Route path="/" element={<Home />}></Route>
-          
+          <Route path="/" element={<Login />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/signup" element={<Signup />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

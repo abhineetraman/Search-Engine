@@ -19,6 +19,6 @@ class CompanyDetails(db.Model):
     email = db.Column(db.String, unique=True)
     incorporation = db.Column(db.String, nullable=False)
     address = db.Column(db.String)
-    revenue = db.Column(db.float, nullable=False)
+    revenue = db.Column(db.Float)
     website = db.Column(db.String)
     is_verified = db.Column(db.Integer, nullable=False)
