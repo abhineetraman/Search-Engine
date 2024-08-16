@@ -2,6 +2,13 @@
 
 This application is made to search on database, apply filter and sort data based on the usage.
 
+## How to Run
+download/open it in any of the code editor and write " pip install -r backend/requirements.txt"
+
+Steps:
+1. Open a terminal and write ./run
+2. Open another terminal and write ./run_frontend
+ 
 The application have 3 components right now
 
 ## 1. Login
